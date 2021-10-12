@@ -188,7 +188,6 @@ public class ThreeByThree {
                 toggleButtons(false);
                 infoText.setText("Player Wins!");
             }
-            System.out.println("Tested: " + l);
         }
         for (List l : winning) {
             if (cpuPositions.containsAll(l)) {
@@ -293,7 +292,6 @@ public class ThreeByThree {
         while (playerPositions.contains(pickedPosition) || cpuPositions.contains(pickedPosition)) {
             pickedPosition = rand.nextInt(9) + 1;
             if (playerPositions.size() + cpuPositions.size() == 9) {
-                System.out.println("Can't play, no more moves.");
                 return 10;
             }
         }
